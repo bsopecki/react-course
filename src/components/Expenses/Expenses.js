@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
+import ExpensesChart from './ExpensesChart';
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
@@ -21,6 +22,7 @@ const Expenses = ({ items }) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
+      <ExpensesChart expenses={filteredExpenses} />
       {filteredExpenses.length === 0 ? (
         <p style={{color:'white'}}>No expenses founded</p>
       ) : (
