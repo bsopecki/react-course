@@ -1,4 +1,4 @@
- const expenseItems = [
+ const DUMYY_EXPENSES = [
     {
       id: '1',
       date: new Date(2021, 2, 28),
@@ -49,4 +49,4 @@
     },
   ];
 
-  export default expenseItems
+  export default DUMYY_EXPENSES

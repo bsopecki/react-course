@@ -4,8 +4,8 @@ import './NewExpense.css'
 const NewExpense = ({onAddExpense}) => {
   const userExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
-      ...enteredExpenseData,
-      id: Math.random().toString()
+      id: Math.random().toString(),
+      ...enteredExpenseData
     }
     onAddExpense(expenseData)
   }
